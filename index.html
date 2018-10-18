@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>learn_css</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--外部式样表-->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--script src="main.js"></script-->
+    <!--内部式样表-->
+    <style>
+        #span_style {
+            border: 1px saddlebrown;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Title">
+        <h1>Hello World!</h1>
+    </div>
+    <div class="Content">
+        <h3>一、式样作用范围</h3>
+        <div>
+            <p padding1="paddingleft">
+                Let's use:
+                <!--内嵌式样-->
+                <span style="border:lightblue ;background-color:magenta">Cascading</span>
+                <span id="span_style">Style</span>
+                <span>Sheets</span>
+            </p>
+        </div>
+        <h3>二、列表</h3>
+        <div>
+            <p padding1="paddingleft">drink:</p>
+            <ul padding3="paddingleft">
+                <li>coffee</li>
+                <li>tea</li>
+                <li>coke</li>
+                <li>milk</li>
+            </ul>
+        </div>
+    
+        <h3>三、图片填充</h3>
+        <div>
+            <p id="test_attachment" padding1="paddingleft">
+                There were doors all round the hall, but they were all locked; and when
+                Alice had been all the way down one side and up the other, trying every
+                door, she walked sadly down the middle, wondering how she was ever to
+                get out again.
+            </p>
+        </div>
+    
+        <h3>四、background-clip</h3>
+        <div>
+            <p id="border-box" class="bkg">The yellow background extends behind the border.</p>
+            <p id="padding-box" class="bkg">The yellow background extends to the inside edge of the border.</p>
+            <p id="content-box" class="bkg">The yellow background extends only to the edge of the content box.</p>
+        </div>
+        <h3>五、属性和字串值属性选择器</h3>
+        <div>
+            <p padding1="paddingleft">我的食谱配料: <i lang="fr-FR">Poulet basquaise</i></p>
+            <ul padding3="paddingleft">
+                <li data-quantity="1kg" data-vegetable>Tomatoes</li>
+                <li data-quantity="3" data-vegetable>Onions</li>
+                <li data-quantity="3" data-vegetable>Garlic</li>
+                <li data-quantity="700g" data-vegetable="not spicy like chili">Red pepper</li>
+                <li data-quantity="2kg" data-meat>Chicken</li>
+                <li data-quantity="optional 150g" data-meat>Bacon bits</li>
+                <li data-quantity="optional 10ml" data-vegetable="liquid">Olive oil</li>
+                <li data-quantity="25cl" data-vegetable="liquid">White wine</li>
+            </ul>
+            <p padding1="paddingleft">主动学习</p>
+            <ol padding3="paddingleft">
+                <li>
+                    <a href="selector.html" title="给足球比赛结果添加样式">添加样式(悬停提示) <a href="example.html">参考示例</a>
+                </li>
+                <li><a href="https://developer.mozilla.org/" >Developer</a>Mozilla Developer Network</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a> defined in the MDN glossary.</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> defined in the MDN glossary.</li>
+            </ol>
+        </div>
+        <h3>六、框操作</h3>
+        <div>
+            <div class="default" property="form"></div>
+            <div class="padding-box" property="form"></div>
+            <div class="content-box" property="form"></div>
+        </div>
+    </div>
+</body>
+
+</html>
