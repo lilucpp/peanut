@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="lilucpp">
+    <meta name="description" content="Small peanut growth record.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>布局</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script-->
+    <style>
+        p {
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .layout-1 p {
+            background: aqua;
+            border: 3px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        span {
+            background: red;
+            border: 1px solid black;
+        }
+
+        .left-0 {
+            width: 50%;
+            float: left;
+            column-count: 1;
+        }
+        .right-0 {
+            color: red;
+            width: 50%;
+            float: right;
+        }
+        .positioned {
+            position: relative;
+            background: yellow;
+            top: 30px;
+            left: 30px;
+        }
+
+        form {
+            display: table;
+            margin: 0 auto;
+        }
+
+        form div {
+            display: table-row;
+        }
+
+        form label, form input {
+            display: table-cell;
+            margin-bottom: 10px;
+        }
+
+        form label {
+            width: 200px;
+            padding-right: 5%;
+            text-align: right;
+        }
+
+        form input {
+            width: 300px;
+        }
+
+        form p {
+            display: table-caption;
+            caption-side: bottom;
+            width: 300px;
+            color: #999;
+            font-style: italic;
+        }
+        .wrapper {
+            padding-right: 20px;
+        }
+        .col {
+            float: left;
+            margin-left: 20px;
+            width: 60px;
+            background: rgb(255, 150, 150);
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-1">
+        <h1>2 column layout example</h1>
+        <div class="left-0">
+            <h2>First column</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+        </div>
+        <div class="right-0">
+            <h2>Second column</h2>
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+        </div>
+    
+        <h1>Positioning</h1>
+    
+        <p>I am a basic block level element.</p>
+        <p class="positioned">I am a basic block level element.</p>
+        <p>I am a basic block level element.</p>
+    </div>
+
+    <form>
+        <p>First of all, tell us your name and age.</p>
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname">
+        </div>
+        <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname">
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="text" id="age">
+        </div>
+    </form>
+
+    <div class="wrapper">
+    <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+        <div class="col">11</div>
+        <div class="col">12</div>
+    </div>
+    <div class="row">
+        <div class="col span1">13</div>
+        <div class="col span6">14</div>
+        <div class="col span3">15</div>
+        <div class="col span2">16</div>    
+    </div>
+    </div>
+</body>
+</html>
